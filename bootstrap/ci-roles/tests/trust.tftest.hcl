@@ -21,7 +21,7 @@ run "all_three" {
     error_message = "plan trust should have GitHub, GitLab, Jenkins"
   }
   assert {
-    condition     = strcontains(data.aws_iam_policy_document.apply_trust.json, "project_path:mrjithendar/aws-vpc:ref_type:branch:ref:master") && strcontains(data.aws_iam_policy_document.apply_trust.json, "repo:mrjithendar/aws-vpc:environment:prod")
+    condition     = strcontains(data.aws_iam_policy_document.apply_trust.json, "project_path:moks-tech/aws-vpc:ref_type:branch:ref:master") && strcontains(data.aws_iam_policy_document.apply_trust.json, "repo:moks-tech/aws-vpc:environment:prod")
     error_message = "apply trust subjects"
   }
 }
