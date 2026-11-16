@@ -55,7 +55,7 @@ variable "enable_github" {
 variable "github_repository" {
   description = "owner/repo allowed to assume the roles."
   type        = string
-  default     = "mrjithendar/aws-vpc"
+  default     = "moks-tech/aws-vpc"
 }
 
 variable "github_environments" {
@@ -85,7 +85,7 @@ variable "gitlab_url" {
 variable "gitlab_project_path" {
   description = "group/project allowed to assume the roles."
   type        = string
-  default     = "mrjithendar/aws-vpc"
+  default     = "moks-tech/aws-vpc"
 }
 
 variable "create_gitlab_oidc_provider" {

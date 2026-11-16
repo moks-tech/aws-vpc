@@ -8,7 +8,7 @@ locals {
       Environment  = var.environment
       Organization = var.organization
       Createdby    = "Terraform"
-      Repository   = "mrjithendar/aws-vpc"
+      Repository   = "moks-tech/aws-vpc"
     },
     var.userid != "" ? { Owner = var.userid } : {}
   )
