@@ -41,7 +41,7 @@ env:
 jobs:
   checks:
     name: Static checks
-    runs-on: ubuntu-latest
+    runs-on: mk4
     steps:
       - uses: actions/checkout@v4
 
